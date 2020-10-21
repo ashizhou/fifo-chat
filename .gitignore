@@ -1,0 +1,20 @@
+# Created by .ignore support plugin (hsz.mobi)
+**/target/
+**/.settings/
+**/.classpath
+**/.checkstyle
+**/.project
+**/.*.swp
+*.DS_Store*
+**/test-output/
+**/.metadata/
+.recommenders/
+**/.springBeans
+**/.factorypath
+.idea/
+*.iml
+/bin/
+**/bin/
+**/.mvn/
+.gitignore
+

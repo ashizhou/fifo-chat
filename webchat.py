@@ -8,11 +8,19 @@ import os
 from os import path
 import sys
 
+<<<<<<< HEAD
 import cgi;
 import cgitb
 cgitb.enable()
 
 fifoname="skonChat"  # Unique name for fifos
+=======
+import cgi
+import cgitb
+cgitb.enable()
+
+fifoname="team4"  # Unique name for fifos
+>>>>>>> bdd4bb5 (Add files via upload)
 sendFifoFile = "/home/fifo/"+fifoname+"_sendFifo"
 getFifoFile = "/home/fifo/"+fifoname+"_getFifo"
 def print_header():
