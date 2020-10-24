@@ -56,7 +56,7 @@ function sendText() {
     {
     type: "get",
 
-    url: "/cgi-bin/team4_webchat.py?message=" + message + "&id="+id,
+    url: "/cgi-bin/zhou1_webchat.py?message=" + message + "&id="+id,
     dataType: "text",
     success:  processResults,
     error: function(request, ajaxOptions, thrownError)
