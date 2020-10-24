@@ -3,7 +3,6 @@ var id;
 $(document).ready(function () {
     $('#sendText').click(sendText);
 
-
     var input = document.getElementById("textinput");
     // Respond to enter key
     input.addEventListener("keyup", function(event) {
@@ -68,12 +67,10 @@ function sendText() {
 function processResults(data) {
     // add to the bottom of the chat box
     console.log("got:" + data);
-    $('#ChatBot').append('<div class="media text-muted pt-3">');
-    $('#ChatBot').append('<p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">');
-    $('#ChatBot').append('<strong class="d-block text-gray-dark">@'+id+'</strong>');
-    $('#ChatBot').append(data);
-    $('#ChatBot').append('</p>');
-    $('#ChatBot').append('</div>');
+    $('#chatBox').append('<div class="media text-muted pt-3">');
+    $('#chatBox').append('<p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">');
+    $('#chatBox').append('<strong class="d-block text-gray-dark">@'+id+'</strong>');
+    $('#chatBox').append(data);
+    $('#chatBox').append('</p>');
+    $('#chatBox').append('</div>');
 }
-
-

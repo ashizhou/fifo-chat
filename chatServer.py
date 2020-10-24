@@ -39,7 +39,7 @@ def chatServer():
 
   # Main loop.  Wait for message, process it, and return result.  Then loop.
   while True:
-    print("Waiting for command")
+    print("Waiting for command");
     sendFifo=open(sendFifoFile, "r")
     getFifo=open(getFifoFile, "w")
 
