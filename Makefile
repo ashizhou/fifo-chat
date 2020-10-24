@@ -13,6 +13,7 @@ PutCGI:
 	ls -l /usr/lib/cgi-bin/
 
 PutHTML:
+	cp assets/* /var/www/html/class/softdev/$(user)/webchat/
 	cp webchat.html /var/www/html/class/softdev/$(user)/webchat/
 	cp webchat.css /var/www/html/class/softdev/$(user)/webchat/
 	cp webchat.js /var/www/html/class/softdev/$(user)/webchat/
