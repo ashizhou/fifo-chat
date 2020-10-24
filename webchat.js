@@ -2,10 +2,7 @@ var id;
 
 $(document).ready(function () {
     $('#sendText').click(sendText);
-<<<<<<< HEAD
-    $('#checkText').click(sendText);
-=======
->>>>>>> bdd4bb5 (Add files via upload)
+
 
     var input = document.getElementById("textinput");
     // Respond to enter key
@@ -58,11 +55,8 @@ function sendText() {
   $.ajax(
     {
     type: "get",
-<<<<<<< HEAD
-    url: "/cgi-bin/skon_webchat.py?message=" + message + "&id="+id,
-=======
+
     url: "/cgi-bin/team4_webchat.py?message=" + message + "&id="+id,
->>>>>>> bdd4bb5 (Add files via upload)
     dataType: "text",
     success:  processResults,
     error: function(request, ajaxOptions, thrownError)
@@ -73,12 +67,6 @@ function sendText() {
 }
 
 function processResults(data) {
-<<<<<<< HEAD
-  // add to the bottom of the chat box
-  console.log("got:"+data);
-  $('#chatBox').append(data);
-}
-=======
     // add to the bottom of the chat box
     console.log("got:" + data);
     $('#chatBox').append('<div class="media text-muted pt-3">');
@@ -90,4 +78,4 @@ function processResults(data) {
     $('#chatBox').append('</div>');
 }
 
->>>>>>> bdd4bb5 (Add files via upload)
+
