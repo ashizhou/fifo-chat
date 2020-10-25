@@ -49,7 +49,7 @@ def main():
     id=form.getvalue("id")
     message=form.getvalue("message")
     result=callChatServer(id,message)
-    result=result.replace("\n", "<br/>")
+    result=result.replace("\n", "")
     print(result)
 
 
