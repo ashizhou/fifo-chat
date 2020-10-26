@@ -1,4 +1,4 @@
-#MakeFile to build and deploy the Sample US CENSUS Name Data using ajax
+#MakeFile to build and deploy the Chat Program using ajax
 # For CSC3004 Software Development
 
 user = team4
