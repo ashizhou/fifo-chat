@@ -31,11 +31,6 @@ function makeid(length) {
    return result;
 }
 
-// Function to force scrollable window at bottom
-function updateScroll(){
-    var element = document.getElementById("chatBox");
-    element.scrollTop = element.scrollHeight;
-}
 
 
  // Respond to send button
@@ -48,7 +43,7 @@ function sendText() {
 
   //document.getElementById('chatBox').innerHTML += "<font color='red'>You: </font>" + inText+"<br />";
   // force to bottom
-  updateScroll();
+
 
   message=inText.replace("","+");
   $.ajax(
