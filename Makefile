@@ -6,7 +6,7 @@ user = team4
 all:  PutHTML PutCGI
 
 PutCGI:
-	chmod 757 webchat.py
+	chmod 777 webchat.py
 	cp webchat.py /usr/lib/cgi-bin/$(user)_webchat.py
 
 	echo "Current contents of your cgi-bin directory: "
